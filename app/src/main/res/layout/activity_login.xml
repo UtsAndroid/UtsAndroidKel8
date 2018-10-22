@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backloginus"
+    tools:context=".Login">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/blank_mid" >
+    </View>
+
+    <TextView
+        android:id="@+id/txv_login_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:text="Masukkan username dan password"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="78dp"
+        android:background="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:id="@+id/linearLayout" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/txt_username"
+            android:textColor="#ffffff"
+            android:hint="Username"
+            android:textColorHint="#ffffff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:ems="10"
+            android:id="@+id/txt_password"
+            android:hint="Password"
+            android:textColorHint="#ffffff"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:text="LOGIN!"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/linearLayout"
+        android:onClick="button_onClick"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/btn_login"
+        android:id="@+id/blank_bottom" >
+    </View >
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Remember me"
+        android:id="@+id/chk_remember"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/blank_bottom" />
+
+
+</RelativeLayout>
+
